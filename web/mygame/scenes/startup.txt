@@ -1,0 +1,66 @@
+*comment Copyright 2015 by Alex Veldman and Rusty J. Hodge.
+*comment
+*comment Radioactive Copyright 2013
+*comment
+
+*title Radioactive: Early Budding 
+*author Rusty J. Hodge and Alex Veldman
+
+*scene_list
+	startup
+	ending
+
+*create name "unknown"
+*create stealth 50
+*create aggressive 50
+*create ruthless 50
+*create diplomatic 50
+*create createdbio 0
+
+"-Code Name-, do you read?"
+*line_break
+"-Code Name-, confirm your teams position."
+
+You reach up to your earpiece to respond to the voice on the other side.
+
+- Click -
+*line_break
+"Copy. We're outisde of the compound. There doesn't appear to be too much security."
+
+The voice from the other side replies:
+"I don't much care how you do it, just make sure you take -Zian Current-, the terrorist calling himself Circuit Breaker, into custody. Of course, I wouldn't mind taking a break from fabricating cover stories for out-of-control fire fights."
+
+You turn to your team to plan an attack when suddenlty a bullet strikes the shoulder of the member next to you. You quickly instruct your unit to fire back and make their way into the structure.
+
+As your team advances, you notice one of the guards open a pipe cover and escape inside. Your teams seems to have the advance mostly under control.
+
+
+
+
+*comment *scene_list
+*comment  startup
+*comment  animal
+*comment  variables
+*comment  gosub
+*comment  ending
+*comment  death
+*comment
+*comment *create leadership 50
+*comment *create strength 50
+
+
+
+*choice
+	#Follow  the gaurd through the pipe heading into the building.
+		*set stealth + 10
+		*finish
+
+    
+	#Fight with your team!
+		*set stealth - 10
+		*finish
+
+
+
+
+    
