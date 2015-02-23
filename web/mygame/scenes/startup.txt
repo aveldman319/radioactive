@@ -15,7 +15,7 @@
 *create aggressive 50
 *create ruthless 50
 *create diplomatic 50
-*create createdbio 0
+*create createdbio 1
 
 "-Code Name-, do you read?"
 *line_break
