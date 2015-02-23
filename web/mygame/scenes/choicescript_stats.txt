@@ -1,5 +1,4 @@
 
-
 *stat_chart
 	text Name
 	opposed_pair Stealth

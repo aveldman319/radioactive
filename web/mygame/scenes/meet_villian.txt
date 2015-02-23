@@ -1,0 +1,24 @@
+*if stealth > 50
+	Before disappearing into the pipe, one of your teammates falls dead on the ground.
+	*line_break
+	*line_break
+	You find the villian with the injector to his arm. You:
+	*choice 
+		#Try to talk him down
+			*set diplomatic + 10
+			*finish
+		#Threaten him harm if he makes a move.
+			*set diplomatic - 10
+			*finish
+*else 
+	You and your team slowly advance into the compound.
+	*line_break
+	*line_break
+	You find the villian with the injector to his arm. You:
+	*choice 
+		#Try to talk him down
+			*set diplomatic + 10
+			*finish
+		#Threaten him harm if he makes a move.
+			*set diplomatic - 10
+			*finish

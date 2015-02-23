@@ -8,6 +8,7 @@
 
 *scene_list
 	startup
+	meet_villian
 	ending
 
 *create name "unknown"
@@ -28,27 +29,12 @@ You reach up to your earpiece to respond to the voice on the other side.
 "Copy. We're outisde of the compound. There doesn't appear to be too much security."
 
 The voice from the other side replies:
-"I don't much care how you do it, just make sure you take -Zian Current-, the terrorist calling himself Circuit Breaker, into custody. Of course, I wouldn't mind taking a break from fabricating cover stories for out-of-control fire fights."
+*line_break
+"I don't much care how you do it, just make sure you take Zian Current, the terrorist calling himself Circuit Breaker, into custody. Of course, I wouldn't mind taking a break from fabricating cover stories for out-of-control fire fights."
 
 You turn to your team to plan an attack when suddenlty a bullet strikes the shoulder of the member next to you. You quickly instruct your unit to fire back and make their way into the structure.
 
 As your team advances, you notice one of the guards open a pipe cover and escape inside. Your teams seems to have the advance mostly under control.
-
-
-
-
-*comment *scene_list
-*comment  startup
-*comment  animal
-*comment  variables
-*comment  gosub
-*comment  ending
-*comment  death
-*comment
-*comment *create leadership 50
-*comment *create strength 50
-
-
 
 *choice
 	#Follow  the gaurd through the pipe heading into the building.
@@ -59,8 +45,5 @@ As your team advances, you notice one of the guards open a pipe cover and escape
 	#Fight with your team!
 		*set stealth - 10
 		*finish
-
-
-
 
     
