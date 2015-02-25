@@ -8,7 +8,7 @@
 
 *scene_list
 	startup
-	meet_villian
+	find_villian
 	ending
 
 *create name "unknown"

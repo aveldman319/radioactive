@@ -1,0 +1,64 @@
+*if stealth > 50
+	You run for the pipe as you relay to your team your pursuit. A conformation reply returns from a member. You run up to the pipe stopping right before the entrance to gain your composure. Before disappearing into the pipe, you glimse one of your operatives fall dead on the ground. Clearing what you can see, you take a second to mourn -operative's- loss then proceed to discreetly stride down the pipeline.
+
+	Focusing back on the mission, you run through the compound's schematics again in your head trying to determine the gaurd's most likely route. Not long into your pusuit, you begin to hear footsteps running up ahead. You chase behind the sound of steps making sure to add as little of your own as possible. The footsteps come to a hault around the corner. 
+
+	You stop behind the corner still out of sight. You hear the gaurd talking on a radio:
+	*choice
+		#Fire at the gaurd.
+			*set stealth - 1
+			Over the radio you hear:
+			*line_break
+			"Were you followed?"
+
+			The gaurd turns around to check just as you turn the corner to take aim.
+
+			You fire and miss the gaurd who bolts down the left pipe to get away.
+
+			You find the villian with the injector to his arm. You:
+			*choice 
+				#Try to talk him down
+					*set diplomatic + 10
+					*finish
+				#Threaten him harm if he makes a move.
+					*set diplomatic - 10
+					*finish
+
+		#Listen in.
+			*set stealth + 1
+			You listen in to the conversation. Over the radio you hear:
+			*line_break
+			"Were you followed?"
+
+			The gaurd turns around to check and sees nothing.
+			*line_break
+			"No sir, I wasn't."
+
+			The radio replies:
+			*line_break
+			"Good. Keep it that way! Now, take the right pipe and hurry up! The intruders are advancing quicker than expected! I don't have much time!"
+
+			The gaurd puts his radio back on his belt. Noticing an opportunity, you sneak up behind the guard and engage him in a knock out hold. After a minor struggle, the gaurd goes limp and you drag his body a little down the left pipe to hide it.
+
+			You find the villian with the injector to his arm. You:
+			*choice 
+				#Try to talk him down
+					*set diplomatic + 10
+					*finish
+				#Threaten him harm if he makes a move.
+					*set diplomatic - 10
+					*finish
+
+
+*else 
+	You and your team slowly advance into the compound.
+	*line_break
+	*line_break
+	You find the villian with the injector to his arm. You:
+	*choice 
+		#Try to talk him down
+			*set diplomatic + 10
+			*finish
+		#Threaten him harm if he makes a move.
+			*set diplomatic - 10
+			*finish
