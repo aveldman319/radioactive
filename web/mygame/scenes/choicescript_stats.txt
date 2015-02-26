@@ -1,4 +1,5 @@
 
+
 *stat_chart
 	text Name
 	opposed_pair Stealth
@@ -11,8 +12,29 @@
 		Initidating
 
 *line_break
+[b]Abilities:[/b]
+*if (stealthAbility > 0) or (combativeAbility > 0)
+	*line_break
+	*if stealthAbility > 0
+		${stealthName}
+		*line_break
+		*goto Combative
+	*label Combative
+	*if combativeAbility > 0
+		${combativeName}
+		*line_break
+		*line_break
+		*goto Biography
+	*line_break
+	*goto Biography
+
+*else
+	*line_break
+	You must progress further in the story to unlock this.
+	
+*label Biography
 [b]Biography:[/b]
-*if CreatedBio = 1
+*if createdBio = 1
 	*stat_chart
 *else
 	*line_break

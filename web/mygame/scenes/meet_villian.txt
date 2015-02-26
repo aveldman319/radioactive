@@ -1,0 +1,39 @@
+*if stealth > 60
+	you got the stealth ability!
+	*goto circuit_breaker
+
+*elseif stealth > 50
+	you fight with the compound
+	*goto circuit_breaker
+
+*elseif stealth < 50
+	you continue fighting compound
+	*goto circuit_breaker
+	
+*else
+	you got the combative ability!
+	*goto circuit_breaker
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+*label circuit_breaker
+
+You find the villian with the injector to his arm. You:
+*choice 
+	#Try to talk him down
+		*set diplomatic + 10
+		*finish
+	#Threaten him harm if he makes a move.
+		*set diplomatic - 10
+		*finish

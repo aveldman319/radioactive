@@ -9,6 +9,7 @@
 *scene_list
 	startup
 	find_villian
+	meet_villian
 	ending
 
 *create name "unknown"
@@ -16,7 +17,14 @@
 *create aggressive 50
 *create ruthless 50
 *create diplomatic 50
-*create createdbio 0
+
+*create createdBio 0
+*create stealthAbility 0
+*create stealthName "Changeling"
+*create combativeAbility 0
+*create combativeName "Combat Ability"
+
+*create serum "S.E.R.U.M"
 
 "-Code Name-, do you read?"
 *line_break
